@@ -2,15 +2,17 @@ public class PC {
     String model;
     CPU cpu;
     Motherboad motherboad;
+    Ram ram;
     HardDrive hard;
 
     public PC() {
     }
 
-    public PC(String model, CPU cpu, Motherboad motherboad, HardDrive hard) {
+    public PC(String model, CPU cpu, Motherboad motherboad, Ram ram ,HardDrive hard) {
         this.model = model;
         this.cpu = cpu;
         this.motherboad = motherboad;
+        this.ram = ram;
         this.hard = hard;
     }
 
@@ -38,6 +40,14 @@ public class PC {
         this.motherboad = motherboad;
     }
 
+    public Ram getRam() {
+        return this.ram;
+    }
+
+    public void setRam(Ram ram) {
+        this.ram = ram;
+    }
+
     public HardDrive getHard() {
         return hard;
     }
@@ -52,8 +62,8 @@ public class PC {
                 "model='" + model + '\'' +
                 ", cpu=" + cpu +
                 ", motherboad=" + motherboad +
+                ", ram=" + ram +
                 ", hard=" + hard +
                 '}';
     }
 }
-
