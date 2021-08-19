@@ -1,8 +1,6 @@
 package components;
 import lombok.*;
 
-import java.util.Arrays;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -16,7 +14,7 @@ public class Books {
 
 //    public Books() {
 //    }
-//
+
 //    public Books(String name, int pages, String[] genre, int release) {
 //        this.name = name;
 //        this.pages = pages;
