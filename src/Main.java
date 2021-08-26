@@ -14,6 +14,9 @@ public class Main {
 
         // // // change data in ram(volume)
         pc1.getRam().setVolume(5);
+        pc1.getHard().setType(Type.HDD);
+        pc1.getMotherboad().setModel("AN-22");
+        pc1.getCpu().setFrequency(44);
         System.out.println(pc1);
     }
 }
